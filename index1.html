@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gucci Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://i.pinimg.com/originals/97/fb/53/97fb536c56013a1cbc19ff99530a44da.jpg'); /* Background image of Gucci */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black; /* Changed text color to black for better visibility */
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for form */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .logo {
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <img class="logo" src="https://static.toiimg.com/thumb/imgsize-23456,msid-106616097,width-600,resizemode-4/106616097.jpg" alt="Gucci Logo" width="200">
+        <h2>Gucci Product Category Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter your first name">
+            </div>
+            <div class="form-group">
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter your last name">
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="Handbags">Handbags</option>
+                    <option value="Wallets">Wallets</option>
+                    <option value="Belts">Belts</option>
+                    <option value="Scarves">Scarves</option>
+                    <option value="Hats">Hats</option>
+                    <option value="Gloves">Gloves</option>
+                    <option value="Sunglasses">Sunglasses</option>
+                    <option value="Watches">Watches</option>
+                    <option value="Jewelry">Jewelry</option>
+                    <option value="HairAccessories">Hair Accessories</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="feedback">Service Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Provide your feedback here"></textarea>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
